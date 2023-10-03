@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+		<title>lliste</title>
+    </head>
+    
+    <body>
+        <table>
+            <tr>
+            <th>llista ordenada</th>
+            <td>
+                <ol type="a" start="4">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+                <ol  type="1" start="100" reversed>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+                <ol type="i" start="999">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </td>
+            </tr>
+            <tr>
+            <th>llista desordenada</th>
+            <td>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul style="list-style-type:circle">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul style="list-style-type:square">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </td>
+            </tr>
+        </table>
+    </body>
+    
+</html>
+
+table {
+    width: 90%;
+    margin: 5%;
+}
+
+tr { 
+    display: block;
+    float: left;
+    width: 50%; 
+    }
+
+th, td { 
+    display: block; 
+    text-align: left;
+    }
+
+
+ol li:nth-child(1):after, 
+ul li:nth-child(1):after {
+    content: "element1";
+}
+
+ol li:nth-child(2):after,
+ul li:nth-child(2):after {
+    content: "element2";
+}
+
+ol li:nth-child(3):after,
+ul li:nth-child(3):after {
+    content: "element3";
+}
+
+ol li:nth-child(4):after,
+ul li:nth-child(4):after {
+    content: "element4";
+}
+
